@@ -76,10 +76,10 @@ export class FileDropDirective {
 
     for (let i = 0; i < files.length; i++) {
       for (let j = 0; j < this.accept.length; j++) {
-        if (FileDropDirective.matchRule(this.accept[j], files[i].type)) {
+        // if (FileDropDirective.matchRule(this.accept[j], files[i].type)) {
           acceptedFiles.push(files[i]);
           break;
-        }
+        // }
       }
     }
 
